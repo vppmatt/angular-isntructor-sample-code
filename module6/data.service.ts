@@ -11,7 +11,7 @@ export class DataService {
 
   version = "1.0";
 
-  getCountries() : Observable<String[]> {
+  getCountries() : Observable<string[]> {
       return this.http.get<string[]>("https://payments.multicode.uk/api/country")
   }
 }
