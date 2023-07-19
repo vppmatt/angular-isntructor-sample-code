@@ -1,0 +1,6 @@
+<h1>Countries:</h1>
+
+<button (click)="toggleVisible()">{{visible ? "hide" : "show" }} countries</button>
+<ul *ngIf="visible">
+    <li *ngFor="let country of countries">{{country}}</li>
+</ul>

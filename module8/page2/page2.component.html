@@ -1,0 +1,10 @@
+<h2>Enter your details</h2>
+<form  [formGroup]="signupForm" (submit)="handleSubmit()">
+<label style="margin-right:10px" for="name">Name</label> 
+<input id="name" type="text"  formControlName="name"/>
+<br>
+<label style="margin-right:10px" for="email">Email</label>
+<input id="email" type="text" formControlName ="email" />
+<br><br>
+<button type="submit">submit</button>
+</form>
